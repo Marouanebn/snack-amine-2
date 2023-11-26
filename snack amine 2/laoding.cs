@@ -8,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace snack_amine_2
 {
     public partial class laoding : Form
     {
+        public string Username { get; set; }
         public laoding()
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace snack_amine_2
 
         private void laoding_Load(object sender, EventArgs e)
         {
-            UpdateLabel();
+            label1.Text = "Welcome " + Username;
         }
        
 
@@ -57,6 +59,11 @@ namespace snack_amine_2
         private void UpdateLabel()
         {
           
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
