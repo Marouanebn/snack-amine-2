@@ -38,7 +38,6 @@ namespace snack_amine_2
                 {
                     con.Open();
 
-                    // Check if the username already exists
                     SqlCommand checkUserCmd = new SqlCommand("SELECT COUNT(*) FROM login WHERE username=@username", con);
                     checkUserCmd.Parameters.AddWithValue("@username", username);
 
@@ -54,7 +53,6 @@ namespace snack_amine_2
                         MessageBox.Show("password do not match");
 
                     }
-                    // Register the new user
                     SqlCommand registerUserCmd = new SqlCommand("INSERT INTO login (username, password) VALUES (@username, @password)", con);
                     registerUserCmd.Parameters.AddWithValue("@username", username);
                     registerUserCmd.Parameters.AddWithValue("@password", password);
@@ -82,6 +80,18 @@ namespace snack_amine_2
         }
 
         private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login nwac = new login();
+            nwac.Show();
+        }
+
+        private void newacc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
