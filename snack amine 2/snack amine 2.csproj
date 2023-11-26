@@ -117,5 +117,14 @@
   <ItemGroup>
     <None Include="Resources\snack-amine--removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-png-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-user-icon-customer-icon-1600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130-1303682_ship-clipart-black-and-white-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace snack_amine_2
 {
     public partial class laoding : Form
     {
+        public string Username { get; set; }
         public laoding()
         {
             InitializeComponent();
@@ -41,6 +44,26 @@ namespace snack_amine_2
                 main.Show();
 
             }
+        }
+
+        private void laoding_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Welcome " + Username;
+        }
+       
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void UpdateLabel()
+        {
+          
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
