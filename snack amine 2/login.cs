@@ -18,6 +18,8 @@ namespace snack_amine_2
         public login()
         {
             InitializeComponent();
+            this.AcceptButton = btnlogin;
+
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
