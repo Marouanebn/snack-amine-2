@@ -63,6 +63,36 @@ namespace snack_amine_2.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _130_1303682_ship_clipart_black_and_white_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("130-1303682_ship-clipart-black-and-white-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password_icon_png_2 {
+            get {
+                object obj = ResourceManager.GetObject("password-icon-png-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_user_icon_customer_icon_1600 {
+            get {
+                object obj = ResourceManager.GetObject("png-user-icon-customer-icon-1600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap snack_amine__removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("snack-amine--removebg-preview", resourceCulture);

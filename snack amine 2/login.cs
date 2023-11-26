@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace snack_amine_2
 {
@@ -47,6 +48,64 @@ namespace snack_amine_2
         private void login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            newacc nwac = new newacc();
+            nwac.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtiduser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtiduser_click(object sender, EventArgs e)
+        {
+            txtiduser.BackColor = Color.White;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = SystemColors.Control;
+            txtpassword.BackColor = SystemColors.Control;
+        }
+
+        private void txtpasssword_click(object sender, EventArgs e)
+        {
+            txtpassword.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel2.BackColor = SystemColors.Control;
+            txtiduser.BackColor = SystemColors.Control;
+        }
+
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtpassword.UseSystemPasswordChar = false;
+        }
+
+        private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtpassword.UseSystemPasswordChar = true;
         }
     }
 }

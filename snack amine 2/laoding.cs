@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,6 +42,21 @@ namespace snack_amine_2
                 main.Show();
 
             }
+        }
+
+        private void laoding_Load(object sender, EventArgs e)
+        {
+            UpdateLabel();
+        }
+       
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void UpdateLabel()
+        {
+          
         }
     }
 }
