@@ -80,6 +80,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "laoding";
             this.Text = "laoding";
+            this.Load += new System.EventHandler(this.laoding_Load);
             this.ResumeLayout(false);
 
         }

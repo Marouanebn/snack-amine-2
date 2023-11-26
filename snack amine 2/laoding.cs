@@ -42,5 +42,10 @@ namespace snack_amine_2
 
             }
         }
+
+        private void laoding_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
