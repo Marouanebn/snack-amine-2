@@ -34,7 +34,7 @@ namespace snack_amine_2
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            pbar.Value += 5;
+            pbar.Value += 4;
             pbar.Text = pbar.Value.ToString() + "%";
             if (pbar.Value == 100)
             {
