@@ -48,5 +48,12 @@ namespace snack_amine_2
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            newacc nwac = new newacc();
+            nwac.Show();
+        }
     }
 }

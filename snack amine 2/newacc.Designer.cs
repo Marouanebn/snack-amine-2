@@ -52,6 +52,7 @@
             this.btnexit.TabIndex = 17;
             this.btnexit.Text = "exit";
             this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // btncreate
             // 

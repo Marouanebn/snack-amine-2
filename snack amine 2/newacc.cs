@@ -39,7 +39,7 @@ namespace snack_amine_2
                     con.Open();
 
                     // Check if the username already exists
-                    SqlCommand checkUserCmd = new SqlCommand("SELECT COUNT(*) FROM users WHERE username=@username", con);
+                    SqlCommand checkUserCmd = new SqlCommand("SELECT COUNT(*) FROM login WHERE username=@username", con);
                     checkUserCmd.Parameters.AddWithValue("@username", username);
 
                     int existingUserCount = Convert.ToInt32(checkUserCmd.ExecuteScalar());
@@ -55,7 +55,7 @@ namespace snack_amine_2
 
                     }
                     // Register the new user
-                    SqlCommand registerUserCmd = new SqlCommand("INSERT INTO users (username, password) VALUES (@username, @password)", con);
+                    SqlCommand registerUserCmd = new SqlCommand("INSERT INTO login (username, password) VALUES (@username, @password)", con);
                     registerUserCmd.Parameters.AddWithValue("@username", username);
                     registerUserCmd.Parameters.AddWithValue("@password", password);
 
@@ -64,6 +64,9 @@ namespace snack_amine_2
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Registration successful!");
+                        this.Hide();
+                        login nwac = new login();
+                        nwac.Show();
                     }
                     else
                     {
@@ -76,6 +79,11 @@ namespace snack_amine_2
                     MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
