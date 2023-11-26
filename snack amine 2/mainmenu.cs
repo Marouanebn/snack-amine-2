@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace snack_amine_2
 {
-    public partial class Form1 : Form
+    public partial class mainmenu : Form
     {
-        public Form1()
+        public mainmenu()
         {
             InitializeComponent();
+        }
+
+        private void interface_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
