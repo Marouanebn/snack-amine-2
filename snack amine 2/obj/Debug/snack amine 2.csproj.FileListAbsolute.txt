@@ -15,3 +15,20 @@ C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack_amine_2.m
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack amine 2.csproj.CopyComplete
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack amine 2.exe
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack amine 2.pdb
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\bin\Debug\snack amine 2.exe.config
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\bin\Debug\snack amine 2.exe
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\bin\Debug\snack amine 2.pdb
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\bin\Debug\CircularProgressBar.dll
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\bin\Debug\WinFormAnimation.dll
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\bin\Debug\CircularProgressBar.xml
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.mainmenu.resources
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.laoding.resources
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.login.resources
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.newacc.resources
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.Properties.Resources.resources
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.csproj.GenerateResource.cache
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.csproj.CopyComplete
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.exe
+C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.pdb
