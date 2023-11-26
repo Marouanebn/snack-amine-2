@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pbar = new CircularProgressBar.CircularProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -44,49 +45,66 @@
             this.pbar.AnimationSpeed = 500;
             this.pbar.BackColor = System.Drawing.Color.Transparent;
             this.pbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.pbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pbar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pbar.ForeColor = System.Drawing.Color.DarkGray;
+            this.pbar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.pbar.InnerMargin = 2;
             this.pbar.InnerWidth = -1;
-            this.pbar.Location = new System.Drawing.Point(112, 58);
+            this.pbar.Location = new System.Drawing.Point(299, 94);
             this.pbar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbar.MarqueeAnimationSpeed = 2000;
             this.pbar.Name = "pbar";
             this.pbar.OuterColor = System.Drawing.Color.Gray;
             this.pbar.OuterMargin = -25;
             this.pbar.OuterWidth = 26;
-            this.pbar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pbar.ProgressWidth = 25;
+            this.pbar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(106)))), ((int)(((byte)(249)))));
+            this.pbar.ProgressWidth = 15;
             this.pbar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.pbar.Size = new System.Drawing.Size(240, 260);
             this.pbar.StartAngle = 270;
             this.pbar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.pbar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.pbar.SubscriptText = ".23";
+            this.pbar.SubscriptText = "";
             this.pbar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.pbar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.pbar.SuperscriptText = "°C";
+            this.pbar.SuperscriptText = "";
             this.pbar.TabIndex = 0;
-            this.pbar.Text = "circularProgressBar1";
             this.pbar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.pbar.Value = 68;
+            this.pbar.Click += new System.EventHandler(this.pbar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Aqua;
+            this.label1.Location = new System.Drawing.Point(362, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "UU";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // laoding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(868, 416);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pbar);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "laoding";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "laoding";
             this.Load += new System.EventHandler(this.laoding_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Timer timer1;
         private CircularProgressBar.CircularProgressBar pbar;
+        private System.Windows.Forms.Label label1;
     }
 }

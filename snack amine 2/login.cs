@@ -28,9 +28,13 @@ namespace snack_amine_2
             if (dt.Rows.Count > 0 && dt.Rows[0][0].ToString() == "1")
             {
                 
-                this.Hide();
+                this.Hide();    
                 laoding lod = new laoding();
+                lod.Username = txtiduser.Text;
+
+
                 lod.Show();
+
             }
             else
             {
@@ -45,6 +49,11 @@ namespace snack_amine_2
         }
 
         private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtiduser_TextChanged(object sender, EventArgs e)
         {
 
         }
