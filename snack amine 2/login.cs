@@ -110,5 +110,15 @@ namespace snack_amine_2
         {
             txtpassword.UseSystemPasswordChar = true;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
