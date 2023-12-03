@@ -73,9 +73,49 @@ namespace snack_amine_2.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _199_1990075_dining_dinner_plate_restaurant_icon_restaurant_png_clipart {
+            get {
+                object obj = ResourceManager.GetObject("199-1990075_dining-dinner-plate-restaurant-icon-restaurant-png-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boisson_icon {
+            get {
+                object obj = ResourceManager.GetObject("boisson icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dessert_icon {
+            get {
+                object obj = ResourceManager.GetObject("dessert icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap password_icon_png_2 {
             get {
                 object obj = ResourceManager.GetObject("password-icon-png-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plat_icon {
+            get {
+                object obj = ResourceManager.GetObject("plat icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

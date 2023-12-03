@@ -163,5 +163,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\199-1990075_dining-dinner-plate-restaurant-icon-restaurant-png-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plat icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dessert icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boisson icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
