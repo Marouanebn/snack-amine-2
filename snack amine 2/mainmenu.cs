@@ -156,7 +156,6 @@ namespace snack_amine_2
         {
             try
             {
-                // Use the global connection string
                 using (SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=restauration;Integrated Security=True"))
                 {
                     connection.Open();
@@ -191,6 +190,7 @@ namespace snack_amine_2
                     MessageBox.Show("Reservation added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Reload the data into the DataGridView
+                    LoadReservationData();
                 }
             }
             catch (Exception ex)
@@ -232,10 +232,40 @@ namespace snack_amine_2
                 MessageBox.Show($"Selected Reservation Data:\n{rowData.ToString().Trim()}");
             }
         }
+        private void LoadReservationData()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=restauration;Integrated Security=True"))
+                {
+                    connection.Open();
+
+                    // Create SQL query for SELECT
+                    string sqlSelect = "SELECT * FROM Reservation";
+
+                    // Create a DataTable to store the results
+                    DataTable dataTable = new DataTable();
+
+                    // Execute SELECT query
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(sqlSelect, connection))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+
+                    // Bind the DataTable to the DataGridView
+                    dataGridView1.DataSource = dataTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void btnsupprimer_Click(object sender, EventArgs e)
         {
+
         }
     }
-        
+
 }
