@@ -67,7 +67,13 @@ namespace snack_amine_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Close the form/application
+                this.Close();
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

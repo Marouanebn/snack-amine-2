@@ -7,6 +7,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
+
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -22,6 +24,7 @@ namespace snack_amine_2
         {
             InitializeComponent();
             dataGridView1.CellClick += dataGridView1_CellClick;
+            LoadReservationData();
 
 
         }
@@ -54,8 +57,15 @@ namespace snack_amine_2
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Close the form/application
+                this.Close();
+            }
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -213,24 +223,20 @@ namespace snack_amine_2
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Check if the clicked cell is not the header
-            if (e.RowIndex >= 0)
-            {
-                // Get the clicked row
-                DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
+           if (e.RowIndex >= 0)
+    {
+        // Get the clicked row
+        DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
 
-                // Initialize a StringBuilder to store the data
-                StringBuilder rowData = new StringBuilder();
-
-                // Iterate through all cells in the selected row
-                foreach (DataGridViewCell cell in selectedRow.Cells)
-                {
-                    // Append the cell value to the StringBuilder
-                    rowData.Append(cell.Value.ToString()).Append(" ");
-                }
-
-                // Display the data or perform any other action
-                MessageBox.Show($"Selected Reservation Data:\n{rowData.ToString().Trim()}");
-            }
+        // Populate the TextBoxes with the values from the selected row
+        txtnp.Text = selectedRow.Cells["NomClient"].Value.ToString();
+        txtt.Text = selectedRow.Cells["Telephone"].Value.ToString();
+        datepicker.Value = Convert.ToDateTime(selectedRow.Cells["DateReservation"].Value);
+        txtp.Text = selectedRow.Cells["NombrePersonnes"].Value.ToString();
+        txtnt.Text = selectedRow.Cells["NumeroTable"].Value.ToString();
+        texts.Text = selectedRow.Cells["Statut"].Value.ToString();
+        txtbn.Text = selectedRow.Cells["Notes"].Value.ToString();
+    }
         }
         private void LoadReservationData()
         {
@@ -243,6 +249,7 @@ namespace snack_amine_2
                     // Create SQL query for SELECT
                     string sqlSelect = "SELECT * FROM Reservation";
 
+                    // Create a DataTable to store the results
                     // Create a DataTable to store the results
                     DataTable dataTable = new DataTable();
 
@@ -264,8 +271,58 @@ namespace snack_amine_2
 
         private void btnsupprimer_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Get the selected row
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+
+                // Get the value from the ID column of the selected row
+                int reservationID = Convert.ToInt32(selectedRow.Cells["IDRESERVATION"].Value);
+
+                // Call a method to delete the row from the database
+                DeleteReservation(reservationID);
+
+                // Remove the row from the DataGridView
+                dataGridView1.Rows.Remove(selectedRow);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void DeleteReservation(int reservationID)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=restauration;Integrated Security=True"))
+                {
+                    connection.Open();
+
+                    // Create SQL query for DELETE
+                    string sqlDelete = "DELETE FROM Reservation WHERE IDRESERVATION = @ReservationID";
+
+                    // Execute DELETE query
+                    using (SqlCommand command = new SqlCommand(sqlDelete, connection))
+                    {
+                        command.Parameters.AddWithValue("@ReservationID", reservationID);
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Reservation deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+            private void btnmodifier_Click(object sender, EventArgs e)
+            {
+           
 
         }
     }
-
 }
