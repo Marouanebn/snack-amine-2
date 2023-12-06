@@ -173,6 +173,7 @@
             this.button7.Text = "Déconnexion";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnpara
             // 
@@ -334,7 +335,7 @@
             this.pnlmenu.Controls.Add(this.panel5);
             this.pnlmenu.Controls.Add(this.panel4);
             this.pnlmenu.Controls.Add(this.panel3);
-            this.pnlmenu.Location = new System.Drawing.Point(247, 84);
+            this.pnlmenu.Location = new System.Drawing.Point(242, 74);
             this.pnlmenu.Name = "pnlmenu";
             this.pnlmenu.Size = new System.Drawing.Size(753, 551);
             this.pnlmenu.TabIndex = 2;
