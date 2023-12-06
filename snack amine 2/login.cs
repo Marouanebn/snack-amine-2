@@ -73,6 +73,8 @@ namespace snack_amine_2
             {
                 // Close the form/application
                 this.Close();
+                Application.Exit();
+
             }
         }
 

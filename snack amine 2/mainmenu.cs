@@ -63,6 +63,8 @@ namespace snack_amine_2
             {
                 // Close the form/application
                 this.Close();
+                Application.Exit();
+
             }
         }
 
@@ -319,10 +321,59 @@ namespace snack_amine_2
 
         }
 
-            private void btnmodifier_Click(object sender, EventArgs e)
+        private void btnmodifier_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
             {
-           
+                // Get the selected row
+                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
 
+                // Get the value from the ID column of the selected row
+                int reservationID = Convert.ToInt32(selectedRow.Cells["IDRESERVATION"].Value);
+
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection("Data Source=.;Initial Catalog=restauration;Integrated Security=True"))
+                    {
+                        connection.Open();
+
+                        // Create SQL query for UPDATE
+                        string sqlUpdate = "UPDATE Reservation SET NomClient = @NomClient, Telephone = @Telephone, " +
+                                           "DateReservation = @DateReservation, NombrePersonnes = @NombrePersonnes, " +
+                                           "NumeroTable = @NumeroTable, Statut = @Statut, Notes = @Notes " +
+                                           "WHERE IDRESERVATION = @ReservationID";
+
+                        // Execute UPDATE query
+                        using (SqlCommand command = new SqlCommand(sqlUpdate, connection))
+                        {
+                            command.Parameters.AddWithValue("@NomClient", txtnp.Text);
+                            command.Parameters.AddWithValue("@Telephone", txtt.Text);
+                            command.Parameters.AddWithValue("@DateReservation", datepicker.Value);
+                            command.Parameters.AddWithValue("@NombrePersonnes", Convert.ToInt32(txtp.Text));
+                            command.Parameters.AddWithValue("@NumeroTable", Convert.ToInt32(txtnt.Text));
+                            command.Parameters.AddWithValue("@Statut", texts.Text);
+                            command.Parameters.AddWithValue("@Notes", txtbn.Text);
+                            command.Parameters.AddWithValue("@ReservationID", reservationID);
+
+                            command.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Reservation updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Reload the data into the DataGridView
+                        LoadReservationData();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to update.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
+
     }
 }

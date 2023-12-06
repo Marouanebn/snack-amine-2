@@ -972,9 +972,9 @@ namespace snack_amine_2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(766, 518);
+            this.Controls.Add(this.pnlmenu);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlreservation);
-            this.Controls.Add(this.pnlmenu);
             this.Controls.Add(this.pnlpromo);
             this.Controls.Add(this.pnlstat);
             this.Controls.Add(this.pnlutilisateur);
