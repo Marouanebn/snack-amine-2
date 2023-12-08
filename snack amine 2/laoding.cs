@@ -41,7 +41,10 @@ namespace snack_amine_2
                 timer1.Stop();
                 this.Hide();
                 mainmenu main = new mainmenu();
+                main.Username = Username; // Pass the username to the mainmenu form
+
                 main.Show();
+
 
             }
         }

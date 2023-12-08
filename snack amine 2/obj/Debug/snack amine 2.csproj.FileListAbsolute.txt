@@ -24,7 +24,6 @@ C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2
 C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.mainmenu.resources
 C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.laoding.resources
 C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.login.resources
-C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.newacc.resources
 C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack_amine_2.Properties.Resources.resources
 C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.csproj.GenerateResource.cache
 C:\Users\Lenovo\Source\Repos\snack-amine-2\snack amine 2\obj\Debug\snack amine 2.csproj.CoreCompileInputs.cache

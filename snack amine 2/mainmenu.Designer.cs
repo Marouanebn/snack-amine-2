@@ -99,6 +99,15 @@ namespace snack_amine_2
             this.pnlstat = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pnlutilisateur = new System.Windows.Forms.Panel();
+            this.pnlcreer = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btncreate = new System.Windows.Forms.Button();
+            this.txtpasswordconfirm = new System.Windows.Forms.TextBox();
+            this.txtpassword = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.pnlchoice = new System.Windows.Forms.Panel();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -120,15 +129,6 @@ namespace snack_amine_2
             this.txtuser = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.pnlcreer = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.btncreate = new System.Windows.Forms.Button();
-            this.txtpasswordconfirm = new System.Windows.Forms.TextBox();
-            this.txtpassword = new System.Windows.Forms.TextBox();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnlparametres = new System.Windows.Forms.Panel();
@@ -162,6 +162,7 @@ namespace snack_amine_2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.pnlstat.SuspendLayout();
             this.pnlutilisateur.SuspendLayout();
+            this.pnlcreer.SuspendLayout();
             this.pnlchoice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).BeginInit();
@@ -169,7 +170,6 @@ namespace snack_amine_2
             ((System.ComponentModel.ISupportInitialize)(this.restaurationDataSet)).BeginInit();
             this.pnlmodifer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.pnlcreer.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnlparametres.SuspendLayout();
@@ -190,9 +190,9 @@ namespace snack_amine_2
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(242, 710);
+            this.panel1.Size = new System.Drawing.Size(182, 577);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -201,9 +201,10 @@ namespace snack_amine_2
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label6.Location = new System.Drawing.Point(51, 11);
+            this.label6.Location = new System.Drawing.Point(38, 9);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 29);
+            this.label6.Size = new System.Drawing.Size(111, 24);
             this.label6.TabIndex = 7;
             this.label6.Text = "Dashboard";
             // 
@@ -216,10 +217,10 @@ namespace snack_amine_2
             this.button7.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 597);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button7.Location = new System.Drawing.Point(0, 485);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(237, 37);
+            this.button7.Size = new System.Drawing.Size(178, 30);
             this.button7.TabIndex = 6;
             this.button7.Text = "Déconnexion";
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -235,11 +236,11 @@ namespace snack_amine_2
             this.btnpara.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpara.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnpara.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpara.Location = new System.Drawing.Point(-1, 502);
-            this.btnpara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnpara.Location = new System.Drawing.Point(-1, 408);
+            this.btnpara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnpara.Name = "btnpara";
-            this.btnpara.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.btnpara.Size = new System.Drawing.Size(251, 57);
+            this.btnpara.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnpara.Size = new System.Drawing.Size(188, 46);
             this.btnpara.TabIndex = 5;
             this.btnpara.Text = "Paramètres";
             this.btnpara.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -255,11 +256,11 @@ namespace snack_amine_2
             this.btnutilisateur.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnutilisateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnutilisateur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnutilisateur.Location = new System.Drawing.Point(-1, 421);
-            this.btnutilisateur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnutilisateur.Location = new System.Drawing.Point(-1, 342);
+            this.btnutilisateur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnutilisateur.Name = "btnutilisateur";
-            this.btnutilisateur.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.btnutilisateur.Size = new System.Drawing.Size(251, 57);
+            this.btnutilisateur.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnutilisateur.Size = new System.Drawing.Size(188, 46);
             this.btnutilisateur.TabIndex = 4;
             this.btnutilisateur.Text = "Utilisateur";
             this.btnutilisateur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -275,11 +276,11 @@ namespace snack_amine_2
             this.btnstat.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnstat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnstat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnstat.Location = new System.Drawing.Point(-1, 334);
-            this.btnstat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnstat.Location = new System.Drawing.Point(-1, 271);
+            this.btnstat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnstat.Name = "btnstat";
-            this.btnstat.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.btnstat.Size = new System.Drawing.Size(251, 57);
+            this.btnstat.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnstat.Size = new System.Drawing.Size(188, 46);
             this.btnstat.TabIndex = 3;
             this.btnstat.Text = "Statistiques";
             this.btnstat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -295,11 +296,11 @@ namespace snack_amine_2
             this.btnreservation.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreservation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnreservation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreservation.Location = new System.Drawing.Point(-1, 165);
-            this.btnreservation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnreservation.Location = new System.Drawing.Point(-1, 134);
+            this.btnreservation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnreservation.Name = "btnreservation";
-            this.btnreservation.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.btnreservation.Size = new System.Drawing.Size(251, 57);
+            this.btnreservation.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnreservation.Size = new System.Drawing.Size(188, 46);
             this.btnreservation.TabIndex = 1;
             this.btnreservation.Text = "Réservation";
             this.btnreservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -315,11 +316,11 @@ namespace snack_amine_2
             this.btnmenu.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmenu.Location = new System.Drawing.Point(0, 82);
-            this.btnmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnmenu.Location = new System.Drawing.Point(0, 67);
+            this.btnmenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnmenu.Name = "btnmenu";
-            this.btnmenu.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.btnmenu.Size = new System.Drawing.Size(251, 57);
+            this.btnmenu.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnmenu.Size = new System.Drawing.Size(188, 46);
             this.btnmenu.TabIndex = 0;
             this.btnmenu.Text = "Menu";
             this.btnmenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -335,11 +336,11 @@ namespace snack_amine_2
             this.btnpromo.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpromo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnpromo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpromo.Location = new System.Drawing.Point(-1, 244);
-            this.btnpromo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnpromo.Location = new System.Drawing.Point(-1, 198);
+            this.btnpromo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnpromo.Name = "btnpromo";
-            this.btnpromo.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
-            this.btnpromo.Size = new System.Drawing.Size(251, 57);
+            this.btnpromo.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnpromo.Size = new System.Drawing.Size(188, 46);
             this.btnpromo.TabIndex = 2;
             this.btnpromo.Text = "Promotion";
             this.btnpromo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -352,10 +353,10 @@ namespace snack_amine_2
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(242, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(182, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(844, 62);
+            this.panel2.Size = new System.Drawing.Size(632, 50);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -363,9 +364,10 @@ namespace snack_amine_2
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(589, 21);
+            this.label7.Location = new System.Drawing.Point(272, 17);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 20);
+            this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 6;
             this.label7.Text = "label7";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -376,10 +378,10 @@ namespace snack_amine_2
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button8.Location = new System.Drawing.Point(785, 1);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button8.Location = new System.Drawing.Point(589, 1);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(53, 55);
+            this.button8.Size = new System.Drawing.Size(40, 45);
             this.button8.TabIndex = 5;
             this.button8.Text = "X";
             this.button8.UseVisualStyleBackColor = true;
@@ -393,29 +395,30 @@ namespace snack_amine_2
             this.pnlmenu.Controls.Add(this.panel5);
             this.pnlmenu.Controls.Add(this.panel4);
             this.pnlmenu.Controls.Add(this.panel3);
-            this.pnlmenu.Location = new System.Drawing.Point(242, 60);
-            this.pnlmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlmenu.Location = new System.Drawing.Point(182, 49);
+            this.pnlmenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlmenu.Name = "pnlmenu";
-            this.pnlmenu.Size = new System.Drawing.Size(844, 650);
+            this.pnlmenu.Size = new System.Drawing.Size(633, 528);
             this.pnlmenu.TabIndex = 2;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Location = new System.Drawing.Point(465, 361);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel7.Location = new System.Drawing.Point(349, 293);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(219, 199);
+            this.panel7.Size = new System.Drawing.Size(164, 162);
             this.panel7.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(57, 17);
+            this.label5.Location = new System.Drawing.Point(43, 14);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 23);
+            this.label5.Size = new System.Drawing.Size(81, 18);
             this.label5.TabIndex = 1;
             this.label5.Text = "Boissons";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -423,10 +426,10 @@ namespace snack_amine_2
             // pictureBox5
             // 
             this.pictureBox5.Image = global::snack_amine_2.Properties.Resources.boisson_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox5.Size = new System.Drawing.Size(163, 127);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
@@ -435,29 +438,30 @@ namespace snack_amine_2
             // 
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Location = new System.Drawing.Point(164, 361);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel6.Location = new System.Drawing.Point(123, 293);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(219, 199);
+            this.panel6.Size = new System.Drawing.Size(164, 162);
             this.panel6.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(57, 16);
+            this.label4.Location = new System.Drawing.Point(43, 13);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 23);
+            this.label4.Size = new System.Drawing.Size(80, 18);
             this.label4.TabIndex = 1;
             this.label4.Text = "Desserts";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::snack_amine_2.Properties.Resources.dessert_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox4.Size = new System.Drawing.Size(163, 127);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
@@ -466,29 +470,30 @@ namespace snack_amine_2
             // 
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Location = new System.Drawing.Point(569, 87);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel5.Location = new System.Drawing.Point(427, 71);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(219, 199);
+            this.panel5.Size = new System.Drawing.Size(164, 162);
             this.panel5.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 17);
+            this.label3.Location = new System.Drawing.Point(40, 14);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 23);
+            this.label3.Size = new System.Drawing.Size(107, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "Plat complet";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::snack_amine_2.Properties.Resources.plat_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox3.Size = new System.Drawing.Size(163, 127);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -497,29 +502,30 @@ namespace snack_amine_2
             // 
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(312, 87);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(234, 71);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(219, 199);
+            this.panel4.Size = new System.Drawing.Size(164, 162);
             this.panel4.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 17);
+            this.label2.Location = new System.Drawing.Point(45, 14);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 23);
+            this.label2.Size = new System.Drawing.Size(71, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Entrées";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::snack_amine_2.Properties.Resources.plat_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox2.Size = new System.Drawing.Size(163, 127);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -529,29 +535,30 @@ namespace snack_amine_2
             // 
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(60, 87);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel3.Location = new System.Drawing.Point(45, 71);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(219, 199);
+            this.panel3.Size = new System.Drawing.Size(164, 162);
             this.panel3.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 17);
+            this.label1.Location = new System.Drawing.Point(55, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 23);
+            this.label1.Size = new System.Drawing.Size(39, 18);
             this.label1.TabIndex = 1;
             this.label1.Text = "Plat";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::snack_amine_2.Properties.Resources.plat_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 127);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -577,47 +584,47 @@ namespace snack_amine_2
             this.pnlreservation.Controls.Add(this.label13);
             this.pnlreservation.Controls.Add(this.label12);
             this.pnlreservation.Controls.Add(this.label8);
-            this.pnlreservation.Location = new System.Drawing.Point(248, 41);
-            this.pnlreservation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlreservation.Location = new System.Drawing.Point(186, 33);
+            this.pnlreservation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlreservation.Name = "pnlreservation";
-            this.pnlreservation.Size = new System.Drawing.Size(838, 669);
+            this.pnlreservation.Size = new System.Drawing.Size(628, 544);
             this.pnlreservation.TabIndex = 5;
             this.pnlreservation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlreservation_Paint);
             // 
             // datepicker
             // 
-            this.datepicker.Location = new System.Drawing.Point(287, 115);
-            this.datepicker.Margin = new System.Windows.Forms.Padding(4);
+            this.datepicker.Location = new System.Drawing.Point(215, 93);
             this.datepicker.Name = "datepicker";
-            this.datepicker.Size = new System.Drawing.Size(295, 22);
+            this.datepicker.Size = new System.Drawing.Size(222, 20);
             this.datepicker.TabIndex = 19;
             this.datepicker.ValueChanged += new System.EventHandler(this.datepicker_ValueChanged);
             // 
             // texts
             // 
-            this.texts.Location = new System.Drawing.Point(287, 230);
-            this.texts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.texts.Location = new System.Drawing.Point(215, 187);
+            this.texts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texts.Name = "texts";
-            this.texts.Size = new System.Drawing.Size(294, 22);
+            this.texts.Size = new System.Drawing.Size(222, 20);
             this.texts.TabIndex = 18;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(36, 223);
+            this.label10.Location = new System.Drawing.Point(27, 181);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 20);
+            this.label10.Size = new System.Drawing.Size(54, 17);
             this.label10.TabIndex = 17;
             this.label10.Text = "Status";
             // 
             // btnsupprimer
             // 
             this.btnsupprimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsupprimer.Location = new System.Drawing.Point(642, 262);
-            this.btnsupprimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnsupprimer.Location = new System.Drawing.Point(482, 213);
+            this.btnsupprimer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnsupprimer.Name = "btnsupprimer";
-            this.btnsupprimer.Size = new System.Drawing.Size(108, 46);
+            this.btnsupprimer.Size = new System.Drawing.Size(81, 37);
             this.btnsupprimer.TabIndex = 16;
             this.btnsupprimer.Text = "Supprimer";
             this.btnsupprimer.UseVisualStyleBackColor = true;
@@ -626,10 +633,10 @@ namespace snack_amine_2
             // btnmodifier
             // 
             this.btnmodifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmodifier.Location = new System.Drawing.Point(642, 165);
-            this.btnmodifier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnmodifier.Location = new System.Drawing.Point(482, 134);
+            this.btnmodifier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnmodifier.Name = "btnmodifier";
-            this.btnmodifier.Size = new System.Drawing.Size(108, 46);
+            this.btnmodifier.Size = new System.Drawing.Size(81, 37);
             this.btnmodifier.TabIndex = 15;
             this.btnmodifier.Text = "Modifier";
             this.btnmodifier.UseVisualStyleBackColor = true;
@@ -638,10 +645,10 @@ namespace snack_amine_2
             // btnajouter
             // 
             this.btnajouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnajouter.Location = new System.Drawing.Point(642, 79);
-            this.btnajouter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnajouter.Location = new System.Drawing.Point(482, 64);
+            this.btnajouter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnajouter.Name = "btnajouter";
-            this.btnajouter.Size = new System.Drawing.Size(108, 46);
+            this.btnajouter.Size = new System.Drawing.Size(81, 37);
             this.btnajouter.TabIndex = 14;
             this.btnajouter.Text = "Ajouter";
             this.btnajouter.UseVisualStyleBackColor = true;
@@ -650,56 +657,56 @@ namespace snack_amine_2
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 398);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 323);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(785, 260);
+            this.dataGridView1.Size = new System.Drawing.Size(589, 211);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txtbn
             // 
-            this.txtbn.Location = new System.Drawing.Point(289, 271);
-            this.txtbn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbn.Location = new System.Drawing.Point(217, 220);
+            this.txtbn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbn.Name = "txtbn";
-            this.txtbn.Size = new System.Drawing.Size(293, 96);
+            this.txtbn.Size = new System.Drawing.Size(221, 79);
             this.txtbn.TabIndex = 12;
             this.txtbn.Text = "";
             this.txtbn.TextChanged += new System.EventHandler(this.txtbn_TextChanged);
             // 
             // txtnt
             // 
-            this.txtnt.Location = new System.Drawing.Point(288, 190);
-            this.txtnt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtnt.Location = new System.Drawing.Point(216, 154);
+            this.txtnt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnt.Name = "txtnt";
-            this.txtnt.Size = new System.Drawing.Size(294, 22);
+            this.txtnt.Size = new System.Drawing.Size(222, 20);
             this.txtnt.TabIndex = 10;
             // 
             // txtp
             // 
-            this.txtp.Location = new System.Drawing.Point(287, 149);
-            this.txtp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtp.Location = new System.Drawing.Point(215, 121);
+            this.txtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtp.Name = "txtp";
-            this.txtp.Size = new System.Drawing.Size(294, 22);
+            this.txtp.Size = new System.Drawing.Size(222, 20);
             this.txtp.TabIndex = 9;
             // 
             // txtt
             // 
-            this.txtt.Location = new System.Drawing.Point(288, 82);
-            this.txtt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtt.Location = new System.Drawing.Point(216, 67);
+            this.txtt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtt.Name = "txtt";
-            this.txtt.Size = new System.Drawing.Size(294, 22);
+            this.txtt.Size = new System.Drawing.Size(222, 20);
             this.txtt.TabIndex = 7;
             this.txtt.TextChanged += new System.EventHandler(this.txtt_TextChanged);
             // 
             // txtnp
             // 
-            this.txtnp.Location = new System.Drawing.Point(288, 44);
-            this.txtnp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtnp.Location = new System.Drawing.Point(216, 36);
+            this.txtnp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtnp.Name = "txtnp";
-            this.txtnp.Size = new System.Drawing.Size(294, 22);
+            this.txtnp.Size = new System.Drawing.Size(222, 20);
             this.txtnp.TabIndex = 6;
             this.txtnp.TextChanged += new System.EventHandler(this.txtnp_TextChanged);
             // 
@@ -707,9 +714,10 @@ namespace snack_amine_2
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(38, 280);
+            this.label22.Location = new System.Drawing.Point(28, 228);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 20);
+            this.label22.Size = new System.Drawing.Size(50, 17);
             this.label22.TabIndex = 5;
             this.label22.Text = "Notes";
             // 
@@ -717,9 +725,10 @@ namespace snack_amine_2
             // 
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.Location = new System.Drawing.Point(37, 191);
+            this.label.Location = new System.Drawing.Point(28, 155);
+            this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(152, 20);
+            this.label.Size = new System.Drawing.Size(133, 17);
             this.label.TabIndex = 4;
             this.label.Text = "Numero de Table";
             this.label.Click += new System.EventHandler(this.label21_Click);
@@ -728,9 +737,10 @@ namespace snack_amine_2
             // 
             this.labelnp.AutoSize = true;
             this.labelnp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelnp.Location = new System.Drawing.Point(37, 151);
+            this.labelnp.Location = new System.Drawing.Point(28, 123);
+            this.labelnp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelnp.Name = "labelnp";
-            this.labelnp.Size = new System.Drawing.Size(179, 20);
+            this.labelnp.Size = new System.Drawing.Size(154, 17);
             this.labelnp.TabIndex = 3;
             this.labelnp.Text = "Nombres Personnes";
             // 
@@ -738,9 +748,10 @@ namespace snack_amine_2
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(36, 116);
+            this.label13.Location = new System.Drawing.Point(27, 94);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(155, 20);
+            this.label13.Size = new System.Drawing.Size(134, 17);
             this.label13.TabIndex = 2;
             this.label13.Text = "Date Reservation";
             // 
@@ -748,9 +759,10 @@ namespace snack_amine_2
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(37, 86);
+            this.label12.Location = new System.Drawing.Point(28, 70);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 20);
+            this.label12.Size = new System.Drawing.Size(31, 17);
             this.label12.TabIndex = 1;
             this.label12.Text = "Tel";
             // 
@@ -758,9 +770,10 @@ namespace snack_amine_2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(37, 43);
+            this.label8.Location = new System.Drawing.Point(28, 35);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 20);
+            this.label8.Size = new System.Drawing.Size(119, 17);
             this.label8.TabIndex = 0;
             this.label8.Text = "Nom et Prenom";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -774,18 +787,19 @@ namespace snack_amine_2
             this.pnlpromo.Controls.Add(this.panel16);
             this.pnlpromo.Controls.Add(this.panel17);
             this.pnlpromo.Controls.Add(this.panel18);
-            this.pnlpromo.Location = new System.Drawing.Point(248, 66);
-            this.pnlpromo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlpromo.Location = new System.Drawing.Point(186, 54);
+            this.pnlpromo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlpromo.Name = "pnlpromo";
-            this.pnlpromo.Size = new System.Drawing.Size(753, 571);
+            this.pnlpromo.Size = new System.Drawing.Size(565, 464);
             this.pnlpromo.TabIndex = 6;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(63, 252);
+            this.label14.Location = new System.Drawing.Point(47, 205);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 16);
+            this.label14.Size = new System.Drawing.Size(41, 13);
             this.label14.TabIndex = 5;
             this.label14.Text = "label14";
             // 
@@ -793,29 +807,30 @@ namespace snack_amine_2
             // 
             this.panel14.Controls.Add(this.label15);
             this.panel14.Controls.Add(this.pictureBox11);
-            this.panel14.Location = new System.Drawing.Point(432, 313);
-            this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel14.Location = new System.Drawing.Point(324, 254);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(219, 199);
+            this.panel14.Size = new System.Drawing.Size(164, 162);
             this.panel14.TabIndex = 4;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(57, 17);
+            this.label15.Location = new System.Drawing.Point(43, 14);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 23);
+            this.label15.Size = new System.Drawing.Size(81, 18);
             this.label15.TabIndex = 1;
             this.label15.Text = "Boissons";
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::snack_amine_2.Properties.Resources.boisson_icon;
-            this.pictureBox11.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox11.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox11.Size = new System.Drawing.Size(163, 127);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
@@ -824,29 +839,30 @@ namespace snack_amine_2
             // 
             this.panel15.Controls.Add(this.label16);
             this.panel15.Controls.Add(this.pictureBox12);
-            this.panel15.Location = new System.Drawing.Point(131, 313);
-            this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel15.Location = new System.Drawing.Point(98, 254);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(219, 199);
+            this.panel15.Size = new System.Drawing.Size(164, 162);
             this.panel15.TabIndex = 3;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(57, 16);
+            this.label16.Location = new System.Drawing.Point(43, 13);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 23);
+            this.label16.Size = new System.Drawing.Size(80, 18);
             this.label16.TabIndex = 1;
             this.label16.Text = "Desserts";
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = global::snack_amine_2.Properties.Resources.dessert_icon;
-            this.pictureBox12.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox12.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox12.Size = new System.Drawing.Size(163, 127);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 0;
             this.pictureBox12.TabStop = false;
@@ -855,29 +871,30 @@ namespace snack_amine_2
             // 
             this.panel16.Controls.Add(this.label17);
             this.panel16.Controls.Add(this.pictureBox13);
-            this.panel16.Location = new System.Drawing.Point(536, 39);
-            this.panel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel16.Location = new System.Drawing.Point(402, 32);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(219, 199);
+            this.panel16.Size = new System.Drawing.Size(164, 162);
             this.panel16.TabIndex = 2;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(53, 17);
+            this.label17.Location = new System.Drawing.Point(40, 14);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(131, 23);
+            this.label17.Size = new System.Drawing.Size(107, 18);
             this.label17.TabIndex = 1;
             this.label17.Text = "Plat complet";
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = global::snack_amine_2.Properties.Resources.plat_icon;
-            this.pictureBox13.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox13.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox13.Size = new System.Drawing.Size(163, 127);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 0;
             this.pictureBox13.TabStop = false;
@@ -886,29 +903,30 @@ namespace snack_amine_2
             // 
             this.panel17.Controls.Add(this.label18);
             this.panel17.Controls.Add(this.pictureBox14);
-            this.panel17.Location = new System.Drawing.Point(279, 39);
-            this.panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel17.Location = new System.Drawing.Point(209, 32);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(219, 199);
+            this.panel17.Size = new System.Drawing.Size(164, 162);
             this.panel17.TabIndex = 1;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(60, 17);
+            this.label18.Location = new System.Drawing.Point(45, 14);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(86, 23);
+            this.label18.Size = new System.Drawing.Size(71, 18);
             this.label18.TabIndex = 1;
             this.label18.Text = "Entrées";
             // 
             // pictureBox14
             // 
             this.pictureBox14.Image = global::snack_amine_2.Properties.Resources.plat_icon;
-            this.pictureBox14.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox14.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox14.Size = new System.Drawing.Size(163, 127);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 0;
             this.pictureBox14.TabStop = false;
@@ -917,29 +935,30 @@ namespace snack_amine_2
             // 
             this.panel18.Controls.Add(this.label19);
             this.panel18.Controls.Add(this.pictureBox15);
-            this.panel18.Location = new System.Drawing.Point(27, 39);
-            this.panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel18.Location = new System.Drawing.Point(20, 32);
+            this.panel18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(219, 199);
+            this.panel18.Size = new System.Drawing.Size(164, 162);
             this.panel18.TabIndex = 0;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(73, 17);
+            this.label19.Location = new System.Drawing.Point(55, 14);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(47, 23);
+            this.label19.Size = new System.Drawing.Size(39, 18);
             this.label19.TabIndex = 1;
             this.label19.Text = "Plat";
             // 
             // pictureBox15
             // 
             this.pictureBox15.Image = global::snack_amine_2.Properties.Resources.plat_icon;
-            this.pictureBox15.Location = new System.Drawing.Point(0, 43);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox15.Location = new System.Drawing.Point(0, 35);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(217, 156);
+            this.pictureBox15.Size = new System.Drawing.Size(163, 127);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 0;
             this.pictureBox15.TabStop = false;
@@ -948,42 +967,146 @@ namespace snack_amine_2
             // 
             this.pnlstat.BackColor = System.Drawing.Color.White;
             this.pnlstat.Controls.Add(this.label9);
-            this.pnlstat.Location = new System.Drawing.Point(248, 58);
-            this.pnlstat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlstat.Location = new System.Drawing.Point(186, 47);
+            this.pnlstat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlstat.Name = "pnlstat";
-            this.pnlstat.Size = new System.Drawing.Size(753, 574);
+            this.pnlstat.Size = new System.Drawing.Size(565, 466);
             this.pnlstat.TabIndex = 7;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(103, 105);
+            this.label9.Location = new System.Drawing.Point(77, 85);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 0;
             this.label9.Text = "label9";
             // 
             // pnlutilisateur
             // 
             this.pnlutilisateur.BackColor = System.Drawing.Color.White;
-            this.pnlutilisateur.Controls.Add(this.pnlcreer);
-            this.pnlutilisateur.Controls.Add(this.pnlchoice);
             this.pnlutilisateur.Controls.Add(this.pnlmodifer);
+            this.pnlutilisateur.Controls.Add(this.pnlchoice);
+            this.pnlutilisateur.Controls.Add(this.pnlcreer);
             this.pnlutilisateur.Controls.Add(this.panel8);
-            this.pnlutilisateur.Location = new System.Drawing.Point(242, 46);
-            this.pnlutilisateur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlutilisateur.Location = new System.Drawing.Point(182, 37);
+            this.pnlutilisateur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlutilisateur.Name = "pnlutilisateur";
-            this.pnlutilisateur.Size = new System.Drawing.Size(841, 664);
+            this.pnlutilisateur.Size = new System.Drawing.Size(631, 540);
             this.pnlutilisateur.TabIndex = 8;
+            // 
+            // pnlcreer
+            // 
+            this.pnlcreer.Controls.Add(this.label20);
+            this.pnlcreer.Controls.Add(this.btncreate);
+            this.pnlcreer.Controls.Add(this.txtpasswordconfirm);
+            this.pnlcreer.Controls.Add(this.txtpassword);
+            this.pnlcreer.Controls.Add(this.txtusername);
+            this.pnlcreer.Controls.Add(this.label21);
+            this.pnlcreer.Controls.Add(this.label23);
+            this.pnlcreer.Controls.Add(this.label24);
+            this.pnlcreer.Location = new System.Drawing.Point(5, 207);
+            this.pnlcreer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlcreer.Name = "pnlcreer";
+            this.pnlcreer.Size = new System.Drawing.Size(627, 331);
+            this.pnlcreer.TabIndex = 24;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(254, 39);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(96, 18);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "Create user";
+            // 
+            // btncreate
+            // 
+            this.btncreate.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btncreate.FlatAppearance.BorderSize = 0;
+            this.btncreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncreate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncreate.Location = new System.Drawing.Point(240, 232);
+            this.btncreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncreate.Name = "btncreate";
+            this.btncreate.Size = new System.Drawing.Size(104, 48);
+            this.btncreate.TabIndex = 25;
+            this.btncreate.Text = "Create";
+            this.btncreate.UseVisualStyleBackColor = false;
+            this.btncreate.Click += new System.EventHandler(this.btncreate_Click);
+            // 
+            // txtpasswordconfirm
+            // 
+            this.txtpasswordconfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpasswordconfirm.Location = new System.Drawing.Point(280, 176);
+            this.txtpasswordconfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpasswordconfirm.Name = "txtpasswordconfirm";
+            this.txtpasswordconfirm.Size = new System.Drawing.Size(141, 21);
+            this.txtpasswordconfirm.TabIndex = 24;
+            // 
+            // txtpassword
+            // 
+            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpassword.Location = new System.Drawing.Point(280, 138);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtpassword.Name = "txtpassword";
+            this.txtpassword.Size = new System.Drawing.Size(141, 21);
+            this.txtpassword.TabIndex = 23;
+            // 
+            // txtusername
+            // 
+            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusername.Location = new System.Drawing.Point(280, 98);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(141, 21);
+            this.txtusername.TabIndex = 22;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(148, 178);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(123, 15);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "Confirm Password";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(148, 138);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(69, 15);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "Password";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(148, 98);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(73, 15);
+            this.label24.TabIndex = 19;
+            this.label24.Text = "Username";
             // 
             // pnlchoice
             // 
             this.pnlchoice.Controls.Add(this.dataGridView3);
             this.pnlchoice.Controls.Add(this.button3);
             this.pnlchoice.Controls.Add(this.button2);
-            this.pnlchoice.Location = new System.Drawing.Point(5, 263);
+            this.pnlchoice.Location = new System.Drawing.Point(4, 214);
+            this.pnlchoice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlchoice.Name = "pnlchoice";
-            this.pnlchoice.Size = new System.Drawing.Size(838, 400);
+            this.pnlchoice.Size = new System.Drawing.Size(628, 325);
             this.pnlchoice.TabIndex = 23;
             this.pnlchoice.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlchoice_Paint);
             // 
@@ -996,11 +1119,12 @@ namespace snack_amine_2
             this.usernameDataGridViewTextBoxColumn,
             this.passwordDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.loginBindingSource;
-            this.dataGridView3.Location = new System.Drawing.Point(193, 154);
+            this.dataGridView3.Location = new System.Drawing.Point(145, 125);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(479, 157);
+            this.dataGridView3.Size = new System.Drawing.Size(359, 128);
             this.dataGridView3.TabIndex = 3;
             this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick_2);
             // 
@@ -1047,9 +1171,10 @@ namespace snack_amine_2
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(132, 36);
+            this.button3.Location = new System.Drawing.Point(99, 29);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 73);
+            this.button3.Size = new System.Drawing.Size(116, 59);
             this.button3.TabIndex = 2;
             this.button3.Text = "modifier";
             this.button3.UseVisualStyleBackColor = true;
@@ -1058,9 +1183,10 @@ namespace snack_amine_2
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(535, 36);
+            this.button2.Location = new System.Drawing.Point(401, 29);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 73);
+            this.button2.Size = new System.Drawing.Size(105, 59);
             this.button2.TabIndex = 1;
             this.button2.Text = "creer";
             this.button2.UseVisualStyleBackColor = true;
@@ -1075,16 +1201,18 @@ namespace snack_amine_2
             this.pnlmodifer.Controls.Add(this.txtuser);
             this.pnlmodifer.Controls.Add(this.label25);
             this.pnlmodifer.Controls.Add(this.label26);
-            this.pnlmodifer.Location = new System.Drawing.Point(4, 252);
+            this.pnlmodifer.Location = new System.Drawing.Point(3, 205);
+            this.pnlmodifer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlmodifer.Name = "pnlmodifer";
-            this.pnlmodifer.Size = new System.Drawing.Size(839, 409);
+            this.pnlmodifer.Size = new System.Drawing.Size(629, 332);
             this.pnlmodifer.TabIndex = 25;
             // 
             // suprimerbtn
             // 
-            this.suprimerbtn.Location = new System.Drawing.Point(647, 120);
+            this.suprimerbtn.Location = new System.Drawing.Point(485, 98);
+            this.suprimerbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.suprimerbtn.Name = "suprimerbtn";
-            this.suprimerbtn.Size = new System.Drawing.Size(110, 60);
+            this.suprimerbtn.Size = new System.Drawing.Size(82, 49);
             this.suprimerbtn.TabIndex = 30;
             this.suprimerbtn.Text = "Supprimer";
             this.suprimerbtn.UseVisualStyleBackColor = true;
@@ -1092,9 +1220,10 @@ namespace snack_amine_2
             // 
             // modiferbtn
             // 
-            this.modiferbtn.Location = new System.Drawing.Point(647, 29);
+            this.modiferbtn.Location = new System.Drawing.Point(485, 24);
+            this.modiferbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modiferbtn.Name = "modiferbtn";
-            this.modiferbtn.Size = new System.Drawing.Size(110, 59);
+            this.modiferbtn.Size = new System.Drawing.Size(82, 48);
             this.modiferbtn.TabIndex = 29;
             this.modiferbtn.Text = "Modifier";
             this.modiferbtn.UseVisualStyleBackColor = true;
@@ -1109,11 +1238,12 @@ namespace snack_amine_2
             this.username,
             this.password});
             this.dataGridView2.DataSource = this.loginBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(200, 203);
+            this.dataGridView2.Location = new System.Drawing.Point(150, 165);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(427, 172);
+            this.dataGridView2.Size = new System.Drawing.Size(320, 140);
             this.dataGridView2.TabIndex = 28;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
@@ -1146,26 +1276,29 @@ namespace snack_amine_2
             // txtpass
             // 
             this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.Location = new System.Drawing.Point(372, 120);
+            this.txtpass.Location = new System.Drawing.Point(279, 98);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(187, 24);
+            this.txtpass.Size = new System.Drawing.Size(141, 21);
             this.txtpass.TabIndex = 27;
             // 
             // txtuser
             // 
             this.txtuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser.Location = new System.Drawing.Point(372, 70);
+            this.txtuser.Location = new System.Drawing.Point(279, 57);
+            this.txtuser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(187, 24);
+            this.txtuser.Size = new System.Drawing.Size(141, 21);
             this.txtuser.TabIndex = 26;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(197, 120);
+            this.label25.Location = new System.Drawing.Point(148, 98);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(83, 18);
+            this.label25.Size = new System.Drawing.Size(69, 15);
             this.label25.TabIndex = 25;
             this.label25.Text = "Password";
             // 
@@ -1173,104 +1306,12 @@ namespace snack_amine_2
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(197, 70);
+            this.label26.Location = new System.Drawing.Point(148, 57);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(85, 18);
+            this.label26.Size = new System.Drawing.Size(73, 15);
             this.label26.TabIndex = 24;
             this.label26.Text = "Username";
-            // 
-            // pnlcreer
-            // 
-            this.pnlcreer.Controls.Add(this.label20);
-            this.pnlcreer.Controls.Add(this.btncreate);
-            this.pnlcreer.Controls.Add(this.txtpasswordconfirm);
-            this.pnlcreer.Controls.Add(this.txtpassword);
-            this.pnlcreer.Controls.Add(this.txtusername);
-            this.pnlcreer.Controls.Add(this.label21);
-            this.pnlcreer.Controls.Add(this.label23);
-            this.pnlcreer.Controls.Add(this.label24);
-            this.pnlcreer.Location = new System.Drawing.Point(7, 255);
-            this.pnlcreer.Name = "pnlcreer";
-            this.pnlcreer.Size = new System.Drawing.Size(836, 407);
-            this.pnlcreer.TabIndex = 24;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(338, 48);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(115, 22);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "Create user";
-            // 
-            // btncreate
-            // 
-            this.btncreate.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btncreate.FlatAppearance.BorderSize = 0;
-            this.btncreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncreate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncreate.Location = new System.Drawing.Point(320, 286);
-            this.btncreate.Name = "btncreate";
-            this.btncreate.Size = new System.Drawing.Size(138, 59);
-            this.btncreate.TabIndex = 25;
-            this.btncreate.Text = "Create";
-            this.btncreate.UseVisualStyleBackColor = false;
-            this.btncreate.Click += new System.EventHandler(this.btncreate_Click);
-            // 
-            // txtpasswordconfirm
-            // 
-            this.txtpasswordconfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpasswordconfirm.Location = new System.Drawing.Point(373, 216);
-            this.txtpasswordconfirm.Name = "txtpasswordconfirm";
-            this.txtpasswordconfirm.Size = new System.Drawing.Size(187, 24);
-            this.txtpasswordconfirm.TabIndex = 24;
-            // 
-            // txtpassword
-            // 
-            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(373, 170);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(187, 24);
-            this.txtpassword.TabIndex = 23;
-            // 
-            // txtusername
-            // 
-            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(373, 120);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(187, 24);
-            this.txtusername.TabIndex = 22;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(198, 219);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(148, 18);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "Confirm Password";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(198, 170);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(83, 18);
-            this.label23.TabIndex = 20;
-            this.label23.Text = "Password";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(198, 120);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(85, 18);
-            this.label24.TabIndex = 19;
-            this.label24.Text = "Username";
             // 
             // panel8
             // 
@@ -1279,16 +1320,18 @@ namespace snack_amine_2
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(841, 248);
+            this.panel8.Size = new System.Drawing.Size(631, 202);
             this.panel8.TabIndex = 22;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::snack_amine_2.Properties.Resources.snack_amine__removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(282, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(212, 10);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(264, 237);
+            this.pictureBox6.Size = new System.Drawing.Size(198, 193);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
@@ -1297,18 +1340,19 @@ namespace snack_amine_2
             // 
             this.pnlparametres.BackColor = System.Drawing.Color.White;
             this.pnlparametres.Controls.Add(this.label11);
-            this.pnlparametres.Location = new System.Drawing.Point(248, 44);
-            this.pnlparametres.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlparametres.Location = new System.Drawing.Point(186, 36);
+            this.pnlparametres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlparametres.Name = "pnlparametres";
-            this.pnlparametres.Size = new System.Drawing.Size(753, 574);
+            this.pnlparametres.Size = new System.Drawing.Size(565, 466);
             this.pnlparametres.TabIndex = 9;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(103, 105);
+            this.label11.Location = new System.Drawing.Point(77, 85);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 16);
+            this.label11.Size = new System.Drawing.Size(41, 13);
             this.label11.TabIndex = 0;
             this.label11.Text = "label11";
             // 
@@ -1318,12 +1362,12 @@ namespace snack_amine_2
             // 
             // mainmenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1086, 710);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(814, 577);
             this.Controls.Add(this.pnlutilisateur);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlreservation);
             this.Controls.Add(this.pnlmenu);
             this.Controls.Add(this.pnlpromo);
@@ -1331,7 +1375,7 @@ namespace snack_amine_2
             this.Controls.Add(this.pnlparametres);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mainmenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "interface";
@@ -1379,6 +1423,8 @@ namespace snack_amine_2
             this.pnlstat.ResumeLayout(false);
             this.pnlstat.PerformLayout();
             this.pnlutilisateur.ResumeLayout(false);
+            this.pnlcreer.ResumeLayout(false);
+            this.pnlcreer.PerformLayout();
             this.pnlchoice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginBindingSource)).EndInit();
@@ -1387,8 +1433,6 @@ namespace snack_amine_2
             this.pnlmodifer.ResumeLayout(false);
             this.pnlmodifer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.pnlcreer.ResumeLayout(false);
-            this.pnlcreer.PerformLayout();
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnlparametres.ResumeLayout(false);

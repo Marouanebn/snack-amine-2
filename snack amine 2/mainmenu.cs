@@ -413,11 +413,19 @@ namespace snack_amine_2
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+            DialogResult result = MessageBox.Show("Vous Vouler Se Deconnecter?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Close the form/application
+                login loginForm = new login();
+                loginForm.Show();
+
+            }
 
             // Open a new instance of the login form
-            login loginForm = new login();
-            loginForm.Show();
+           
         }
 
         private void btncreate_Click(object sender, EventArgs e)
