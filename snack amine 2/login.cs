@@ -55,9 +55,7 @@ namespace snack_amine_2
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            newacc nwac = new newacc();
-            nwac.Show();
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -67,7 +65,15 @@ namespace snack_amine_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Close the form/application
+                this.Close();
+                Application.Exit();
+
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

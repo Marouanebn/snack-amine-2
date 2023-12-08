@@ -1,7 +1,6 @@
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack amine 2.csproj.AssemblyReference.cache
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack_amine_2.laoding.resources
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack_amine_2.login.resources
-C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack_amine_2.newacc.resources
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack_amine_2.Properties.Resources.resources
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack amine 2.csproj.GenerateResource.cache
 C:\Users\asus\source\repos\snack amine 2\snack amine 2\obj\Debug\snack amine 2.csproj.CoreCompileInputs.cache
