@@ -419,6 +419,7 @@ namespace snack_amine_2
             if (result == DialogResult.Yes)
             {
                 // Close the form/application
+                this.Close();
                 login loginForm = new login();
                 loginForm.Show();
 
